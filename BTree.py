@@ -15,7 +15,7 @@ class BTree:
     def create(self, node, data):
         # Check if node has a root
         if node is None:
-            return Node(data)
+            return Node(data) 
         else:
             if data <= node.data:
                 node.left = self.create(node.left, data)
